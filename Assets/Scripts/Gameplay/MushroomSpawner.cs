@@ -28,7 +28,6 @@ public class MushroomSpawner : MonoBehaviour
             }
         }
 
-        //UnityEngine.Debug.Log($"Найдено клеток травы: {_spawnPositions.Count}");
         InvokeRepeating(nameof(SpawnMushroom), 0f, _spawnInterval);
     }
     private void SpawnMushroom()
